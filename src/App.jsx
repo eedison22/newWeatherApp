@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { getCurrentWeather } from './services/getCurrentWeather';
 
 import { ProgressBar } from 'react-loader-spinner'
-import DarkModeToggle from './components/DarkMode/DarkModeToggle';
 import loader from './assets/icons/loader.svg'
 import frame from './assets/icons/frame.svg'
 
