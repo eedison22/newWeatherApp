@@ -1,0 +1,45 @@
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.dark-mode-toggle label {
+  cursor: pointer;
+}
+
+.dark-mode-toggle input[type='checkbox'] {
+  width: 2.5rem;
+  height: 1.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ccc;
+  border-radius: 1rem;
+  position: relative;
+  outline: none;
+}
+
+.dark-mode-toggle input[type='checkbox']::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: scale(0.9);
+  transition: transform 0.2s ease-in-out;
+}
+
+.dark-mode-toggle input[type='checkbox']:checked::before {
+  transform: scale(1.1);
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
