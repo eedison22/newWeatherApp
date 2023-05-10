@@ -20,6 +20,7 @@ body{
   height: 100vh;
   position: relative;
 }
+
 .supercontainer {
   padding: 10px;
   position: absolute; 
@@ -45,6 +46,7 @@ body{
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   padding: 5px;  
+  text-align: center;
 }
 .change_deg_container {
   position: absolute;
@@ -143,6 +145,12 @@ body{
   margin-right: 10px;
   max-width: 100%;
   height: auto;
+}
+
+.darkmode {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
 }
 
 }

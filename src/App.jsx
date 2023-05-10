@@ -7,6 +7,7 @@ import loader from './assets/icons/loader.svg'
 import frame from './assets/icons/frame.svg'
 
 import './App.css'
+import DarkModeToggle from './components/DarkMode/DarkModeToggle';
 
 
 function App() {
@@ -66,7 +67,7 @@ function App() {
     style={{ backgroundImage: `url(${image[background]})` }}
   >
      
-     { weather ? <><div className='name'><p>Wheather app</p></div><div className='supercontainer'><img src={frame}></img>
+     { weather ? <><div className='name'><p>Wheather app</p><DarkModeToggle className="darkmode"/></div><div className='supercontainer'><img src={frame}></img>
      <div className='weather_card'>
       <div className='weather_card_superior'>
         <div className='weather_info'>
@@ -100,7 +101,9 @@ function App() {
         onClick={()=> setIsCelsius(!isCelcius)}>Change °{isCelcius ? 'F' : 'C'}
         </button>
       </div>
-     </div> </>
+     </div>
+      
+    </>
      : <>
      <div className='loader_container'>
       <img src={loader}/>
@@ -115,7 +118,7 @@ function App() {
         borderColor = '#F4442E'
         barColor = '#51E5FF'/>
       </p>
-     </div>
+     </div>     
 </>}
     </div>
   )

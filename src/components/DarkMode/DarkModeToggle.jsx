@@ -6,7 +6,9 @@ function DarkModeToggle() {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode'); // Añade o quita una clase en el body para aplicar estilos CSS
+    document.body.classList.toggle('dark-mode'); 
+  const backgroundDiv = document.querySelector('.background');
+  backgroundDiv.classList.toggle('dark-mode-background');
   };
 
   return (

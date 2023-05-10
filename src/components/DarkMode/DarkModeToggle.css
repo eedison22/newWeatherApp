@@ -36,10 +36,18 @@
 }
 
 .dark-mode-toggle input[type='checkbox']:checked::before {
-  transform: scale(1.1);
+  transform: translateX(1em);
 }
-
-.dark-mode {
-  background-color: #222;
-  color: #fff;
+.dark-mode-background {
+  background-image: (0, 0, 0);
+}
+.dark-mode-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
 }
