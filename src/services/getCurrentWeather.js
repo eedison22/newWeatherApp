@@ -7,7 +7,7 @@ export const getCurrentWeather = async (lat, lon) => {
    try {
     const apiKey = '70a06d85d0887d5152966f414798e701';
     const params = {lat, lon, appid:apiKey};
-    const res = await axios.get('http://api.openweathermap.org/data/2.5/weather', { params,  });
+    const res = await axios.get('https://api.openweathermap.org/data/2.5/weather', { params,  });
     return {
         country: res.data.sys.country,
         city: res.data.name,
