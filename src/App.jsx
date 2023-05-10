@@ -87,7 +87,7 @@ function App() {
           </div>
         </div>
         <div className='weather_icon'>
-          <img src={weather.weather.icon} alt={weather.weather.description}/>{weather.weather.description}
+          <img src={weather.weather.icon} alt={weather.weather.description}/><p>{weather.weather.description}</p>
         </div>
       </div>
       <div className='weather_info_city'>

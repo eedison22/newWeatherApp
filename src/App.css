@@ -41,12 +41,14 @@ body{
 }
 
 .name p {
-  color: white;
+  color: black;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   padding: 5px;  
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 .change_deg_container {
   position: absolute;
@@ -91,6 +93,7 @@ body{
 }
 .weather_info_min_max p {
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 .weather_info_min_max {
   font-size: 1rem;
@@ -103,8 +106,10 @@ body{
 }
 
 .weather_info_city {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 5px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 .weather_icon {
@@ -123,6 +128,8 @@ body{
 
 .weather_icon p {
   margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 .loader_container {
   display: flex;
